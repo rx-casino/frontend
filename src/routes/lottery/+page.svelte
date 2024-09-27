@@ -1,0 +1,3 @@
+<div>
+    Lottery page
+</div>

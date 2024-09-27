@@ -1,0 +1,491 @@
+.bPsBUR {
+    margin: 0px auto;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    max-width: 2300px;
+    padding-top: 24px;
+}
+ .bPsBUR.show-side::before {
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: calc(50% - 900px);
+    bottom: 0px;
+    z-index: 9;
+    background-image: linear-gradient(to left, rgb(36, 38, 43) 0%, rgb(36, 38, 43) 20%, rgba(36, 38, 43, 0) 100%);
+}
+.bPsBUR.show-side::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: calc(50% - 900px);
+    bottom: 0px;
+    z-index: 9;
+    background-image: linear-gradient(to right, rgb(36, 38, 43) 0%, rgb(36, 38, 43) 20%, rgba(36, 38, 43, 0) 100%);
+}
+.bPsBUR .gradient-wrap {
+    max-width: 1832px;
+    padding: 0px 0.75rem;
+    width: 100%;
+    position: relative;
+    margin: 0px;
+}
+.iyCsvj {
+    margin: 0px -0.5rem;
+    overflow: visible;
+}
+.swiper-pointer-events {
+    touch-action: pan-y;
+}
+
+.IsnnesSS{
+    padding: 0px 10px;
+}
+.swiper-slide {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition-property: transform;
+}
+.dnfJpJ {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+.joQyOD {
+    flex: 2 1 0%;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    background-color: rgb(49, 52, 60);
+    display: block;
+    position: relative;
+    margin: 0px 0.375rem;
+}
+.joQyOD img {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    image-rendering: -webkit-optimize-contrast;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.joQyOD::after {
+    content: "";
+    display: block;
+    width: 100%;
+    padding-top: 28%;
+}
+
+.ktmMpR::after {
+    content: "";
+    display: block;
+    width: 100%;
+    padding-top: 56%;
+}
+.ktmMpR {
+    flex: 1 1 0%;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    background-color: rgb(49, 52, 60);
+    display: block;
+    position: relative;
+    margin: 0px 0.375rem;
+}
+.ktmMpR img {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    image-rendering: -webkit-optimize-contrast;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.ktmMpR .cut-time {
+    position: absolute;
+    left: 52%;
+    top: 13%;
+    color: rgb(255, 255, 255);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 8%;
+    z-index: 11;
+    font-size: 12px;
+    font-weight: 800;
+}
+.CAbVv {
+    width: 3.125rem;
+    height: 1.25rem;
+    border-radius: 0.625rem;
+    overflow: hidden;
+    position: absolute;
+    right: 0.5625rem;
+    top: 0.5625rem;
+    z-index: 10;
+    background-color: rgb(0, 0, 0);
+}
+.CAbVv .inner {
+    width: 100%;
+    height: 100%;
+    background-size: 10px 10px;
+    background-image: linear-gradient(-45deg, rgba(248, 147, 147, 0.15) 25%, transparent 0px, transparent 50%, rgba(248, 147, 147, 0.15) 0px, rgba(248, 147, 147, 0.15) 75%, transparent 0px);
+    animation: 1s linear 0s infinite normal none running back-anim;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    line-height: 1.25rem;
+} 
+.kpCklu {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.bPsBUR .navigation-btns-wrap .navigation-prev-banner {
+    position: absolute;
+    z-index: 99;
+    left: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.kpCklu > button:first-child {
+    margin-right: 4px;
+}
+.kpCklu button {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+.kpCklu button.prev .icon {
+    margin-left: -1px;
+    transform: rotate(180deg);
+}
+.bPsBUR .navigation-btns-wrap .navigation-next-banner {
+    position: absolute;
+    z-index: 99;
+    top: 50%;
+    right: 2px;
+    transform: translateY(-50%);
+}
+.kpCklu button .icon {
+    width: 0.9375rem;
+    height: 0.9375rem;
+    margin-left: 0.1875rem;
+    margin-top: -0.0625rem;
+}
+.gyJkwe {
+    max-width: 1832px;
+    margin: 0px auto;
+    padding: 1.25rem 1rem;
+}
+.gAnAie {
+    transform-origin: left top;
+}
+.cuYgQT {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 208px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 1.25rem;
+}
+.cuYgQT .left-wrap {
+    width: 592px;
+    height: 208px;
+    margin-right: 12px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.cuYgQT > div {
+    padding: 16px;
+}
+.kwUMQi {
+    height: 100%;
+    overflow: hidden;
+}
+.cuYgQT .left-wrap .list-one {
+    width: 272px;
+    margin-right: 16px;
+}
+.cuYgQT > div .top {
+    padding: 12px;
+}
+.kwUMQi .top {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+}
+.kwUMQi .top .circle {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    flex: 0 0 auto;
+}
+.kwUMQi .top .circle img {
+    width: 150%;
+    margin-left: -25%;
+    margin-top: -25%;
+}
+.kwUMQi .top .word {
+    flex: 1 1 0%;
+}
+.cuYgQT > div .top p {
+    height: 30px;
+    line-height: 30px;
+    margin-left: 20px;
+}
+.kwUMQi .top p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-left: 0.5rem;
+    color: rgb(229, 233, 237);
+}
+.dGbYFZ p {
+    margin: 0px;
+}
+
+
+.blNkCs {
+    padding: 0.5rem;
+}
+.jiYpQl {
+    overflow: hidden;
+}
+.jiYpQl > div {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 1.25rem;
+    overflow: hidden;
+}
+.fLGcZr {
+    height: 8.75rem;
+}
+.fLGcZr .tabs .tabs-navs {
+    height: 3rem;
+}
+.cvKYOe .tabs .tabs-navs {
+    height: 3.75rem;
+    margin-bottom: 0.5rem;
+    background-color: transparent;
+}
+.kQfmQV .tabs-navs {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 2.25rem;
+    position: relative;
+    border-radius: 1.125rem;
+    background-color: rgba(49, 52, 60, 0.7);
+}
+.cvKYOe .tabs .tabs-navs .tabs-nav {
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    width: 50%;
+}
+.kQfmQV .tabs-nav.is-active {
+    color: rgb(245, 246, 247);
+    font-weight: bold;
+}
+.kQfmQV .tabs-nav {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex: 1 1 0%;
+    height: 100%;
+    cursor: pointer;
+    white-space: nowrap;
+    width: 100%;
+    z-index: 1;
+}
+.kwUMQi {
+    height: 100%;
+    overflow: hidden;
+}
+.cvKYOe .tabs .tabs-navs .tabs-nav > div {
+    width: 100%;
+}
+.jiYpQl > div .top {
+    height: 3rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-top: 0.125rem;
+}
+.fLGcZr .tabs .tabs-navs .top {
+    margin-bottom: 0px;
+}
+.cvKYOe .tabs .tabs-navs .tabs-nav > div .top {
+    padding-left: 0.75rem;
+}
+.cvKYOe .tabs .tabs-navs .tabs-nav > div .top p {
+    text-align: left;
+}
+.jiYpQl > div .top .word p {
+    height: 100%;
+}
+.kwUMQi .top .word span {
+    margin-right: 0.25rem;
+}
+.fLGcZr .mobile-top-games-wrap {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.fLGcZr .mobile-top-games-wrap .item-wrap {
+    /* width: 50%; */
+    height: 100%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding-left: 0.75rem;
+    padding-right: 0.25rem;
+}
+.gZglJR {
+    width: 100%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    height: 3.375rem;
+    max-width: 14rem;
+}
+.gZglJR .left {
+    width: 3.25rem;
+    height: 3.25rem;
+}
+.gPcmgp {
+    border-radius: 0.625rem;
+    flex: 0 0 auto;
+    cursor: pointer;
+    overflow: hidden;
+}
+.gZglJR .right {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding-left: 0.625rem;
+    height: 3.375rem;
+    flex: 1 1 0%;
+    overflow: hidden;
+}
+.gPcmgp .image-inner {
+    background-color: rgb(49, 52, 60);
+    width: 100%;
+    height: 100%;
+}
+.gPcmgp .image-inner img {
+    width: 100%;
+    height: 100%;
+}
+.gZglJR .right .right-word-wrap {
+    height: 1.125rem;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.gZglJR .right .right-word-wrap p.sp {
+    font-weight: normal;
+    opacity: 0.6;
+    color: rgb(152, 167, 181);
+}
+.gZglJR .right .right-word-wrap p {
+    height: 1rem;
+    line-height: 1rem;
+    width: 100%;
+    color: rgb(229, 233, 237);
+    font-size: 0.75rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.gZglJR .right .right-word-wrap.big-word p {
+    font-size: 0.875rem;
+}
+.gZglJR .right .right-word-wrap p span {
+    padding-left: 0.25rem;
+    color: rgb(93, 219, 28);
+    font-weight: bold;
+    font-size: 0.875rem;
+}
+.cvKYOe .tabs .tabs-navs .bg {
+    box-shadow: none;
+    background-color: transparent;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background-image: linear-gradient(rgb(16, 17, 19) 10%, rgba(0, 0, 0, 0));
+}
+.kQfmQV .tabs-navs .bg.is-reverse {
+    transition: left 0.2s ease-out, right 0.3s ease-out;
+}
+.hJeVbT {
+    transform-origin: left top;
+}
+.hDuYyE {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 190px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 1.25rem;
+}
+.hDuYyE .list-one, .hDuYyE .list-two {
+    width: 220px;
+    margin-right: 12px;
+}
+.hDuYyE > div {
+    height: 100%;
+}
+.jPPoTb {
+    height: 100%;
+    overflow: hidden;
+}
+.hDuYyE > div .top {
+    padding: 0px 0.875rem;
+    height: 55px;
+}
+.jPPoTb .top {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+}
+.jPPoTb .top .circle {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    flex: 0 0 auto;
+}
+.jPPoTb .top .circle img {
+    width: 150%;
+    margin-left: -25%;
+    margin-top: -25%;
+}
