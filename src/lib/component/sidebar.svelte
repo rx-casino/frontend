@@ -429,7 +429,7 @@
         </button>
 
         <div class="line"></div>
-
+    {#if $app.sideHasExpand !== $app.sideFold}
         <div class="sc-fHeRUh hhNgUw border_bottom">
             <span>Language Options</span>
             <div class="sc-jJoQJp dsRMpL select  sc-dtDOqo lfiNFq">
@@ -449,7 +449,7 @@
                         <use xlink:href="#icon_Dark"></use>
                     </svg>
                 </div>
-                 <!-- svelte-ignore a11y-no-static-element-interactions -->
+                <!-- svelte-ignore a11y-no-static-element-interactions -->
                 <!-- svelte-ignore a11y-click-events-have-key-events -->
                 <div on:click={()=> handleThemeSwitch("light")} class="item {!is_light_mode ? "is-active" : ""}">
                     <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="sc-gsDKAQ hxODWG icon">
@@ -462,20 +462,85 @@
                 <p>Currently</p>
             </div>
         </div>
-    </div>
-    <div class="border_bottom">
-        <div class="live">
-            <div class="support-icon">
-                <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="sc-gsDKAQ hxODWG icon">
-                    <use xlink:href="#icon_Support"></use>
-                </svg>
+        </div>
+    {:else}
+        <div class="sc-evcjhq jzXtuE">
+            <div class="fold-lan">
+                <span class="ttu">en</span>
+                <div class="lan-wrap">
+                    <div class="sc-jJoQJp gOHquD select  sc-dtDOqo lfiNFq hidden-lan">
+                        <div class="select-trigger">English<div class="arrow top">
+                            <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="sc-gsDKAQ hxODWG icon">
+                                <use xlink:href="#icon_Arrow"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <span>Live Support</span>
+        </div>
+        <div class="sc-fHeRUh hhNgUw fold-theme">
+            <div class="theme-icon-wrap">
+                <div class="theme-icon flex-center">
+                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="sc-gsDKAQ hxODWG icon">
+                        <use xlink:href="#{is_light_mode ? "icon_Dark" : "icon_Light"}"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="sc-gSQFLo dprxuS theme">
+                <div class="theme-check">
+                <!-- svelte-ignore a11y-no-static-element-interactions -->
+                <!-- svelte-ignore a11y-click-events-have-key-events -->
+                <div on:click={()=> handleThemeSwitch("darken")} class="item {is_light_mode ? "is-active" : ""} ">
+                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="sc-gsDKAQ hxODWG icon">
+                            <use xlink:href="#icon_Dark"></use>
+                        </svg>
+                    </div>
+                <!-- svelte-ignore a11y-no-static-element-interactions -->
+                <!-- svelte-ignore a11y-click-events-have-key-events -->
+                <div on:click={()=> handleThemeSwitch("light")} class="item {!is_light_mode ? "is-active" : ""}">
+                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="sc-gsDKAQ hxODWG icon">
+                            <use xlink:href="#icon_Light"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="theme-word">
+                    <p>{!is_light_mode ? "Lightmode" : "Darkmode"}</p>
+                    <p>Currently</p>
+                </div>
+            </div>
         </div>
     </div>
+    {/if}
 
-    <div class="border_bottom end"><div class="network"><span>Social Media</span><div class="sc-XxNYO hNXSBx social-links"><a class="telegram" href="https://t.me/NanoGamesOfficial" target="_blank"><img src="https://static.nanogames.io/assets/Telegram.f76d7c46.svg" class="telegram" alt=""></a><a class="github" href="https://github.com/NanoGamesio/crash/" target="_blank"><img src="https://static.nanogames.io/assets/Github.87e42b3d.svg" class="github" alt=""></a><a class="twitter" href="https://twitter.com/nanogamesio?lang=en" target="_blank"><img src="https://static.nanogames.io/assets/Twitter.ec46be69.svg" class="twitter" alt=""></a><a class="discord" href="https://discord.gg/5sWsU4d" target="_blank"><img src="https://static.nanogames.io/assets/Discord.cbf05e6a.svg" class="discord" alt=""></a></div></div></div>
 
+    {#if $app.sideHasExpand !== $app.sideFold}
+        <div class="border_bottom">
+            <div class="live">
+                <div class="support-icon">
+                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="sc-gsDKAQ hxODWG icon">
+                        <use xlink:href="#icon_Support"></use>
+                    </svg>
+                </div>
+                <span>Live Support</span>
+            </div>
+        </div>
+    {:else}
+        <div class="sc-dkYRCH bnRVzR">
+            <div class="support-wrap">
+                <div class="fold-support">
+                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="sc-gsDKAQ hxODWG icon">
+                        <use xlink:href="#icon_Support"></use>
+                    </svg>
+                </div>
+                <span class="hidden">Live Support</span>
+            </div>
+        </div>
+    {/if}
+    {#if $app.sideHasExpand !== $app.sideFold}
+        <div class="border_bottom end"><div class="network"><span>Social Media</span><div class="sc-XxNYO hNXSBx social-links"><a class="telegram" href="https://t.me/NanoGamesOfficial" target="_blank"><img src="https://static.nanogames.io/assets/Telegram.f76d7c46.svg" class="telegram" alt=""></a><a class="github" href="https://github.com/NanoGamesio/crash/" target="_blank"><img src="https://static.nanogames.io/assets/Github.87e42b3d.svg" class="github" alt=""></a><a class="twitter" href="https://twitter.com/nanogamesio?lang=en" target="_blank"><img src="https://static.nanogames.io/assets/Twitter.ec46be69.svg" class="twitter" alt=""></a><a class="discord" href="https://discord.gg/5sWsU4d" target="_blank"><img src="https://static.nanogames.io/assets/Discord.cbf05e6a.svg" class="discord" alt=""></a></div></div></div>
+    {:else}
+        <div class="sc-ilfuhL bonVdK"><div class="sc-XxNYO hNXSBx social-links"><a class="telegram" href="https://t.me/NanoGamesOfficial" target="_blank"><img src="https://static.nanogames.io/assets/Telegram.f76d7c46.svg" class="telegram" alt=""></a><a class="github" href="https://github.com/NanoGamesio/crash/" target="_blank"><img src="https://static.nanogames.io/assets/Github.87e42b3d.svg" class="github" alt=""></a><a class="twitter" href="https://twitter.com/nanogamesio?lang=en" target="_blank"><img src="https://static.nanogames.io/assets/Twitter.ec46be69.svg" class="twitter" alt=""></a><a class="discord" href="https://discord.gg/5sWsU4d" target="_blank"><img src="https://static.nanogames.io/assets/Discord.cbf05e6a.svg" class="discord" alt=""></a></div></div>
+    {/if}
     </div>
 </div>
 

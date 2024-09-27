@@ -1,6 +1,6 @@
 .gUqOVz {
     margin-top: 2.5rem;
-    background-color: rgb(27, 29, 33);
+    background-color: var(--card-bg);
     padding: 48px 0px 0px;
 }
 .gUqOVz .footer-wrap {
@@ -24,9 +24,10 @@
 .gUqOVz .footer__desc {
     width: 360px;
     padding-right: 24px;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 2.3;
-    color: rgba(153, 164, 176, 0.8);
+    font-weight: 600;
+    color: var(--text-color);
 }
 .gUqOVz .v-line {
     border-right: 1px solid rgba(84, 97, 106, 0.15);
@@ -40,12 +41,14 @@
 
 .gUqOVz .footer__entries a {
     display: block;
-    font-size: 12px;
-    color: rgb(192, 203, 213);
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-color);
     text-transform: uppercase;
 }
 .gUqOVz .footer__entries a:hover{
-    color: rgb(67, 179, 9);
+    color: 
+    var(--primary-color);
 }
 .gUqOVz .contact-us {
     max-width: 560px;
@@ -72,7 +75,8 @@
     margin-right: 4px;
 }
 .gUqOVz .footer__contact .item a {
-    color: rgb(67, 179, 9);
+    color: 
+    var(--primary-color);
 }
 .gUqOVz .footer__currencies {
     margin-top: 24px;

@@ -654,7 +654,7 @@
     height: 2.5rem;
     min-width: 2.5rem;
     border-radius: 50%;
-    background: rgb(67, 179, 9);
+    background: var(--primary-color);
     display: flex;
     -webkit-box-align: center;
     align-items: center;
@@ -710,4 +710,198 @@
     height: 1.25rem;
     display: inline-block;
     vertical-align: top;
+}
+.jzXtuE .fold-lan {
+    margin-top: 1rem;
+}
+.jzXtuE .fold-theme, .jzXtuE .fold-lan {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0px auto 1rem;
+}
+.jzXtuE .fold-lan span {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background: rgb(45, 48, 53);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.jzXtuE .fold-lan .lan-wrap {
+    display: none;
+}
+.lfiNFq .select-trigger {
+    background: rgba(45, 48, 53, 0.5);
+}
+.eTxQfM svg {
+    fill: rgba(153, 164, 176, 0.8);
+}
+.jzXtuE .fold-theme .theme-icon-wrap {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.jzXtuE .fold-theme .theme-icon {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-image: linear-gradient(to right, rgba(1, 179, 105, 0.4), rgba(85, 89, 102, 0.4) 55%, rgba(85, 89, 102, 0.4));
+}
+.jzXtuE .fold-theme:hover {
+    border: none;
+}
+.jzXtuE .fold-theme:hover .theme-icon-wrap {
+    display: none;
+}
+.jzXtuE .fold-theme:hover .theme {
+    width: auto;
+    height: 2.5rem;
+    display: flex;
+    position: absolute;
+    left: 1.125rem;
+    background: rgb(23, 24, 27);
+    border: 1px solid rgba(107, 196, 55, 0.3);
+    border-radius: 1.25rem;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.jzXtuE .fold-theme:hover .theme .theme-check {
+    margin-left: -1px;
+}
+.hhNgUw .theme .theme-check {
+    background-color: rgba(45, 48, 53, 0.5);
+}
+.dprxuS .theme-check {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background-color: rgba(45, 48, 53, 0.5);
+    height: 2.5rem;
+    border-radius: 1.25rem;
+    cursor: pointer;
+}
+.dprxuS .theme-check .item.is-active {
+    background-image: linear-gradient(to right, rgba(1, 179, 96, 0.4), rgba(85, 89, 102, 0.4) 45%, rgba(85, 89, 102, 0.4));
+}
+.dprxuS .theme-check .item {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    padding: 0px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.hhNgUw .theme .theme-check .is-active > svg {
+    fill: rgb(245, 246, 247);
+}
+.jzXtuE .fold-theme:hover .theme .theme-word {
+    margin-right: 0.75rem;
+}
+.jzXtuE .fold-theme .theme {
+    display: none;
+}
+.dprxuS {
+    display: flex;
+}
+.dprxuS .theme-word {
+    margin-left: 0.75rem;
+    font-size: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.dprxuS .theme-word > p:first-child {
+    font-weight: bold;
+    color: rgb(245, 246, 247);
+}
+.jzXtuE .fold-theme:hover .theme .theme-word {
+    margin-right: 0.75rem;
+}
+.hhNgUw .theme .theme-word > p:first-child {
+    color: rgb(245, 246, 247);
+}
+.dprxuS .theme-word > p {
+    margin: 0px;
+    line-height: 1rem;
+    /* height: 1rem; */
+    white-space: nowrap;
+}
+.bnRVzR {
+    margin-bottom: 1rem;
+}
+.bnRVzR:hover {
+    height: 2.5rem;
+}
+.bnRVzR .support-wrap {
+    width: 100%;
+    height: 2.5rem;
+    cursor: pointer;
+}
+.bnRVzR:hover .support-wrap {
+    width: 11.25rem;
+    position: absolute;
+    left: 1.0625rem;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    background: rgb(23, 24, 27);
+    border-radius: 1.25rem;
+    border: 1px solid rgba(107, 196, 55, 0.3);
+}
+.bnRVzR:hover .support-wrap .fold-support {
+    margin: 0px;
+}
+.bnRVzR .support-wrap .fold-support {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin: 0px auto;
+    background-color: var(--primary-color);
+}
+.bnRVzR .support-wrap .hidden {
+    display: none;
+}
+.bnRVzR .support-wrap .fold-support svg {
+    fill: rgb(255, 255, 255);
+}
+.bnRVzR:hover .support-wrap .hidden {
+    display: block;
+    width: 8.75rem;
+    text-align: center;
+    color: rgb(245, 246, 247);
+}
+.hNXSBx a {
+    display: block;
+    text-align: center;
+    margin-top: 1.25rem;
+}
+.bonVdK {
+    border-top: 1px solid rgba(49, 52, 60, 0.6);
+    border-bottom: 1px solid rgba(49, 52, 60, 0.6);
+    padding: 1rem 0px;
+}
+.hNXSBx {
+    width: 100%;
+}
+.hNXSBx > a:first-child {
+    margin-top: 0px;
+}
+.hNXSBx a img {
+    width: 1.125rem;
 }

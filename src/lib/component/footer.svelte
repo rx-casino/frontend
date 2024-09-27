@@ -8,7 +8,7 @@
   <div class="footer-wrap">
     <img src="{$app?.largeLogos}" alt="" class="logo">
     <div class="{$app.newScreen > 600 ? "flex" : ""}">
-      <div class="footer__desc">rx-casino.come is built by gamblers for gamblers. With our unique community and a huge selection of games like Crash, HashDice, Plinko, and many more. Your greatest casino adventure is waiting for you!</div>
+      <div class="footer__desc">RX-casino.com is built by gamblers for gamblers. With our unique community and a huge selection of games like Crash, HashDice, Plinko, and many more. Your greatest casino adventure is waiting for you!</div>
       <div class="v-line"></div>
       <div class="footer__entries">
         <a href="/help/provably-fair">HELP CENTER</a>

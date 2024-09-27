@@ -48,8 +48,8 @@
 .fnKcEH.button {
     color: rgb(245, 246, 247);
     box-shadow: rgba(29, 34, 37, 0.1) 0px 4px 8px 0px;
-    background-color: rgb(67, 179, 9);
-    background-image: conic-gradient(from 1turn, rgb(67, 179, 9), rgb(93, 219, 28));
+    background-color: var(--primary-color);
+    background-image: conic-gradient(from 1turn, var(--primary-color), rgb(42, 187, 66));
 }
 .cBmlor {
     display: block;
@@ -136,6 +136,46 @@
     top: 50%;
     margin-top: 3.75rem;
     margin-left: -8.75rem;
+}
+
+.gOHquD {
+    position: relative;
+    height: 2.5rem;
+    opacity: 1;
+}
+.gOHquD .select-trigger {
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    overflow: hidden;
+    height: 100%;
+    cursor: pointer;
+    padding: 0px 1.25rem;
+    user-select: none;
+    border-radius: 1.25rem;
+    background-color: rgb(23, 24, 27);
+}
+.gOHquD .select-trigger .arrow {
+    width: 2.5rem;
+    height: 100%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+.gOHquD .select-trigger .arrow > svg {
+    font-size: 0.625rem;
+    transition: transform 0.5s cubic-bezier(0.36, 0.66, 0.04, 1);
+}
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 @media screen and (max-width: 621px) {
     .ePAxUv {
