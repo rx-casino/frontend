@@ -390,7 +390,7 @@
             </div>
         </button>
 
-        <button on:click={()=> goToExternalSite("/casino")} class="sc-iNGGcK knLCVT menu-item special-nav vip {route === "/casino" ? "select" : ""}" >
+        <button on:click={()=> goToExternalSite("/vip-club")} class="sc-iNGGcK knLCVT menu-item special-nav vip {route === "/vip-club" ? "select" : ""}" >
             <div class="{$app.sideHasExpand === $app.sideFold ?  "menu-mobile" : "menu-pc"} ">
                 <img alt="menu-icon" src="https://static.nanogames.io/assets/vipclub.3b37e72c.png">
                 {#if $app.sideHasExpand !== $app.sideFold}
@@ -399,7 +399,7 @@
             </div>
         </button>
 
-        <button on:click={()=> goToExternalSite("/help/provably-fair")} class="sc-iNGGcK knLCVT menu-item {route === "/my-favorite" ? "select" : ""}" >
+        <button on:click={()=> goToExternalSite("/help/provably-fair")} class="sc-iNGGcK knLCVT menu-item {route.includes("help") ? "select" : ""}" >
             <div class="{$app.sideHasExpand === $app.sideFold ?  "menu-mobile" : "menu-pc"} ">
                 <img alt="menu-icon" src="https://static.nanogames.io/assets/fairness.12d49bfb.png">
                 {#if $app.sideHasExpand !== $app.sideFold}

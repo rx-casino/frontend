@@ -2,7 +2,9 @@
 	import Screens from '$lib/component/screens.svelte';
     import Navbar from "$lib/component/navbar.svelte";
     import "../styles/global.css"
+    import { app} from "$lib/store/screen.js";
     import Footer from '$lib/component/footer.svelte';
+    import NestedLayout from '$lib/nested-pages/nested-layout.svelte';
 
 </script>
 
@@ -13,5 +15,8 @@
         <slot></slot>
         <Footer />
     </div>
+    {#if  Object.keys($app.searchUrl).length}
+        <NestedLayout />
+    {/if}
 
 </div>

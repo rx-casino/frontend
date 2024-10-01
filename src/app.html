@@ -75,23 +75,35 @@
 				background-color: #24262b;
 			}
 			.darken {
-				--text-color: rgba(95,105,117,.8);
+				--text-color: rgba(239, 242, 246, 0.8);
 				--primary-color: #01a854;
 				--background-color: #24262b;
-				--placeholder-color: #75808c;
+				--placeholder-color: rgba(153, 164, 176, 0.6);
 				--card-bg: rgb(27, 29, 33);
 				--footer-bg: rgb(27, 29, 33);
 				--autofill-color: #f5f6f7;
 				--scroll-color: #24262B;
+				--win-color:rgb(67, 179, 9);
+				--icon-color-hover: rgb(255, 255, 255);
+				--icon-color: rgba(95, 105, 117, 0.6);
+				--nested-bg: rgb(23, 24, 27);
+				--input-bg: rgba(45, 48, 53, 0.5);
+				--input-border-color:rgb(45, 48, 53);
 			}
 			:root {
-				--text-color: rgba(95, 105, 117, 0.8);
+				--text-color: rgba(52, 60, 70, 0.8);
 				--primary-color: #5ddb1c;
-				--background-color: #f7f7fa;
+				--background-color: #dfdfe9;
 				--card-bg: rgb(255, 255, 255);
 				--placeholder-color: #57616b;
 				--autofill-color: #31373d;
 				--scroll-color: #f5f6fa;
+				--win-color:rgb(67, 179, 9);
+				--icon-color-hover: rgb(255, 255, 255);
+				--icon-color: rgba(95, 105, 117, 0.6);
+				--nested-bg: rgb(245, 246, 250);
+				--input-bg: rgb(245, 246, 250);
+				--input-border-color:rgb(233, 234, 242);
 			}
 			@media screen and (min-width: 621px) {
 				body {
@@ -134,7 +146,11 @@
 			:root {
 				--swiper-theme-color: #007aff;
 			}
-	
+			table {
+				width: 100%;
+				border-collapse: collapse;
+				border-spacing: 0;
+			}
 			body, input, textarea, a, button {
 				color: var(--text-color);
 			}

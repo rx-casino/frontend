@@ -2,6 +2,7 @@
     import "../../styles/component/navbar.css";
     import { app , theme} from "$lib/store/screen.js";
     import MobileMenu from "./mobileMenu.svelte";
+    import { goto } from "$app/navigation";
 
     const handleChatScren = (()=>{
         $app.updateChatClass("clicked")
@@ -23,6 +24,17 @@
         app.set($app)
     })
 
+    const handleRoute = ((route)=>{
+        goto(`${$app.url === "/" ? "" : $app.url}?modal=auth&tab=${route}`)
+        let obj = {
+            modal: "auth",
+            tab: route
+        }
+        $app.searchUrl = obj
+        app.set($app)
+    })
+
+
 </script>
 
 {#if $app.screen < 621 && $app.isMobileMenu}
@@ -35,8 +47,8 @@
         <div class="header">
             <div class="sc-hGnimi ftyLxH left"></div>
             <div class="login-in">
-                <button class="sign-in">Sign in</button>
-                <button class="sc-iqseJM sc-egiyK cBmlor fnKcEH button button-normal">
+                <button on:click={()=> handleRoute("login")} class="sign-in">Sign in</button>
+                <button on:click={()=> handleRoute("sign-up")} class="sc-iqseJM sc-egiyK cBmlor fnKcEH button button-normal">
                     <div class="button-inner">Sign up</div>
                 </button>
                 <button on:click={handleChatScren} id="chat" class="sc-eicpiI PGOpB">
@@ -69,8 +81,8 @@
             </span>
         </button>
         <div class="header-login">
-            <button class="sign-in">Sign in</button>
-            <button class="sc-iqseJM sc-egiyK cBmlor fnKcEH button button-normal">
+            <button on:click={()=> handleRoute("login")} class="sign-in">Sign in</button>
+            <button on:click={()=> handleRoute("sign-up")} class="sc-iqseJM sc-egiyK cBmlor fnKcEH button button-normal">
                 <div class="button-inner">Sign up</div>
             </button>
         </div>

@@ -431,7 +431,7 @@
 }
 .gZglJR .right .right-word-wrap p span {
     padding-left: 0.25rem;
-    color: rgb(93, 219, 28);
+    color: var(--primary-color);
     font-weight: bold;
     font-size: 0.875rem;
 }
@@ -488,4 +488,85 @@
     width: 150%;
     margin-left: -25%;
     margin-top: -25%;
+}
+.llygwG .select-trigger {
+    width: 10.3125rem;
+    padding: 0px 1.875rem 0px 0.75rem;
+    background: var(--card-bg);
+}
+
+.ecYYiT {
+    margin-top: 40px;
+}
+.fufAIq .tabs-navs {
+    color: rgb(245, 246, 247);
+    font-size: 0.875rem;
+    margin-left: 0.625rem;
+    margin-bottom: 0.75rem;
+    max-width: 12.5rem;
+}
+.fufAIq .tabs-view {
+    border-radius: 1.25rem;
+}
+.kQfmQV .tabs-view {
+    position: relative;
+}
+.emIWso {
+    min-height: 38.25rem;
+    padding: 0.625rem;
+    background-color: var(--card-bg);
+    border-radius: 1.25rem;
+}
+.emIWso .game-name {
+    font-weight: 800;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.emIWso .game-name .game-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.1875rem;
+}
+.emIWso .game-name .name {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.iTDswZ.user-info {
+    color: var(--text-color);
+    font-weight: bold;
+}
+.erPQzq .coin-icon {
+    width: 1.4em;
+    height: 1.4em;
+    margin-right: 0.25em;
+}
+.emIWso .win .amount {
+    color: var(--win-color);
+}
+.erPQzq.has-sign .amount-str {
+    width: 7.2em;
+}
+.erPQzq {
+    display: inline-flex;
+    vertical-align: middle;
+    -webkit-box-align: center;
+    align-items: center;
+    white-space: nowrap;
+}
+.gA-DObP .dialog-head {
+    background-color: transparent;
+    box-shadow: none;
+}
+.jUOgyY {
+    height: 3.875rem;
+    margin: 1rem 0px;
+}
+
+@media screen and (max-width: 1400px) {
+    .llygwG {
+        margin: 0px;
+    }
 }

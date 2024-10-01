@@ -19,6 +19,8 @@ export class ScreenScript{
         this.smallLagos =  new URL('$lib/component/rx-casino-logo.png', import.meta.url).href
         this.largeLogos = new URL('$lib/component/rx-casino-logo.png', import.meta.url).href
         this.isMobileMenu = false
+        this.searchUrl = ""
+        this.url = ""
     }
     themeConfig(theme){
         this.theme = theme
