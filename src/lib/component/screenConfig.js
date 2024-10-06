@@ -1,7 +1,7 @@
 
 export class ScreenScript{
     constructor(){
-        this.theme = ""
+        this.theme = "darken"
         this.sideBar = "sidebar-fold"
         this.openCLass = "side-unfold"
         this.closeClass = "side-fold"
@@ -21,6 +21,7 @@ export class ScreenScript{
         this.isMobileMenu = false
         this.searchUrl = ""
         this.url = ""
+        this.preload = true
     }
     themeConfig(theme){
         this.theme = theme
@@ -75,7 +76,6 @@ export class ScreenScript{
             this.chatClass = "has-chat"
             this.chatBoxExpand = 360
         }
-        console.log(this.isSideClass)
         document.body.className = this.theme + ` ${this.isSideClass} ` + this.chatClass
     }
 }

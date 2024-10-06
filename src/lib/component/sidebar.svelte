@@ -13,8 +13,9 @@
     $: is_light_mode = $app.theme === "darken"
 
     function goToExternalSite(route) {
-        // window.open(route, '', 'noopener noreferrer');
-        goto(route)
+        window.open(route, '_self', 'noopener noreferrer');
+        // console.log($app)
+        // goto(route)
     }
 
     const handleThemeSwitch = ((mode)=>{

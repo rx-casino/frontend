@@ -159,7 +159,12 @@
     padding: 0px 1.25rem;
     user-select: none;
     border-radius: 1.25rem;
-    background-color: var(--card-bg);
+    background-color: var(--background-color);
+}
+textarea {
+    padding: .625rem;
+    resize: none;
+    box-sizing: border-box;
 }
 .gOHquD .select-trigger .arrow {
     width: 2.5rem;
@@ -173,6 +178,15 @@
     right: 0px;
     top: 0px;
 }
+.eWZHfu.button {
+    color: rgb(245, 246, 247);
+    box-shadow: rgba(29, 34, 37, 0.1) 0px 4px 8px 0px;
+    background-color: rgb(88, 26, 196);
+    background-image: conic-gradient(from 1turn, rgb(88, 26, 196), rgb(119, 60, 253));
+}
+.cBmlor:active.sc-iqseJM:not(:disabled) {
+    transform: scale(0.95);
+}
 .gOHquD .select-trigger .arrow > svg {
     font-size: 0.625rem;
     transition: transform 0.5s cubic-bezier(0.36, 0.66, 0.04, 1);
@@ -181,6 +195,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.fGPfpD {
+    height: 100%;
+    width: 7.25rem;
+}
+.dialog-head .dialog-title {
+    font-size: 1rem;
+    margin: 0px;
+    font-weight: bold;
+    flex: 1 1 0%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    color: var(--text-color);
+}
+.fGPfpD svg {
+    margin-right: 0.3125rem;
 }
 @media screen and (max-width: 621px) {
     .ePAxUv {
@@ -257,6 +288,11 @@
     overflow: hidden;
     background-color: var(--card-bg);
 }
+.default-style > div {
+    border-radius: 20px;
+    background-color: var(--card-bg);
+    padding: 1.25rem 1.25rem 0px;
+}
 .dialog-head.has-close {
     margin-right: 3.75rem;
 }
@@ -270,6 +306,38 @@
     height: 3.75rem;
     margin-left: 1.125rem;
     transition: 0.5s;
+}
+.default-style {
+    padding-top: 3.75rem;
+    background-color: var(--nested-bg);
+}
+.dialog-box {
+    color: var(--inactive-text-color);
+    background-color: var(--card-bg);
+    border-top-left-radius: 2.5rem;
+    border-top-right-radius: 2.5rem;
+    padding: 1.75rem 1.125rem;
+}
+.dialog-head.has-back {
+    margin-left: 3.125rem;
+}
+.dialog-back svg {
+    transform: rotate(180deg);
+    width: 16px;
+    height: 16px;
+}
+.dialog-back {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 11;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 3.75rem;
+    height: 3.75rem;
 }
 .fLASqZ {
     position: absolute;
@@ -344,6 +412,12 @@
 }
 .kDuLvp .input-control:focus-within {
     border-color: var(--primary-color);
+}
+.ddROGz .send-input .input-area .input-control:focus-within {
+    border: 1px solid var(--primary-color);
+}
+.ddROGz .send-input .input-area:focus-within {
+    padding-right: 4rem;
 }
 .kDuLvp .input-control textarea, .kDuLvp .input-control input {
     flex: 1 1 0%;

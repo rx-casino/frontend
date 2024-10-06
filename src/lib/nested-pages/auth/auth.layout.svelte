@@ -4,7 +4,7 @@
     import Signup from "./signup.svelte";
     import { app } from "$lib/store/screen.js";
     import Login from "./login.svelte";
-
+    import { search_tab } from '$lib/store/routes.js';
     
 </script>
 
@@ -20,10 +20,10 @@
             <img alt="" src="https://static.nanogames.io/assets/login_coco.1855b11e.png">
         </div>
         <div class="sc-dkPtRN jScFby scroll-view hide-bar sc-hCwLRM gVXbPg">
-            {#if $app.searchUrl?.tab === "sign-up"}
+            {#if $search_tab?.tab === "sign-up"}
                 <Signup />   
             {/if}
-            {#if $app.searchUrl?.tab === "login"}
+            {#if $search_tab?.tab === "login"}
                 <Login />   
             {/if}
         </div>

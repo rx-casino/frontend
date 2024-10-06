@@ -1,0 +1,590 @@
+.wihpY.user__profile {
+    padding: 0.875rem;
+    background: var(--nested-bg);
+}
+.kqEjrM {
+    position: relative;
+    margin-top: 0.75rem;
+}
+.kqEjrM .user-info {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.kqEjrM .like {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: var(--text-color);
+    padding: 0px 0.75rem;
+    cursor: unset;
+}
+.kqEjrM .button {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 2.25rem;
+    background: rgba(30, 32, 36, 0.7);
+    border-radius: 1.6875rem;
+}
+.fUstMm {
+    align-self: flex-start;
+}
+.fUstMm .vip-box {
+    width: 3.8125rem;
+    height: 4.875rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-weight: 600;
+    font-size: 0.875rem;
+    padding-top: 1.75rem;
+    text-align: center;
+    color: var(--text-color);
+}
+.kqEjrM .like .icon {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+    fill: rgb(237, 99, 0);
+}
+.kqEjrM .edit {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 2.25rem;
+    border-radius: 1.125rem;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background: rgb(30, 32, 36);
+}
+.kqEjrM .edit .icon {
+    width: 1rem;
+    height: 1rem;
+    fill: var(--icon-color);
+}
+.kqEjrM .user-info .avatar-box {
+    position: relative;
+}
+.kqEjrM .user-info .avatar {
+    width: 70px;
+    height: 70px;
+    border: 2px solid var(--input-border-color);
+    border-radius: 50%;
+    cursor: pointer;
+    vertical-align: middle;
+}
+.kqEjrM .user-info .name-box {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-top: 0.625rem;
+    color: var(--text-color);
+    font-weight: 600;
+}
+.kqEjrM .user-info .user-name {
+    font-size: 1.25rem;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.kqEjrM .user-info .user-level {
+    margin-top: 0.25rem;
+    width: auto;
+}
+.kqEjrM .user-info .user-level .img-star {
+    height: 1.125rem;
+    width: auto;
+    background-size: auto 100%;
+}
+
+.bRYT {
+    background: var(--card-bg);
+    border-radius: 1.25rem;
+    padding: 0.875rem;
+    margin-bottom: 0.5rem;
+}
+.jTMRvT .module-name {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.bRYT .module-name {
+    color: var(--text-color);
+    margin: 0.25rem 0px 0.75rem;
+}
+.jTMRvT .module-name .total {
+    margin-left: 0.5rem;
+}
+.jTMRvT .module-name .detail-button {
+    flex: 1 1 0%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    color: var(--primary-color);
+}
+.jTMRvT .module-name .detail-button .icon {
+    margin-left: 0.5rem;
+    width: 1rem;
+    height: 1rem;
+    fill: var(--icon-color);
+}
+.jTMRvT.self {
+    margin-top: 1rem;
+}
+.jTMRvT .scroll {
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    overflow: auto;
+    cursor: pointer;
+}
+.jTMRvT .scroll .item {
+    flex-shrink: 0;
+    margin-right: 0.9375rem;
+}
+.jTMRvT .scroll .img.locked {
+    opacity: 0.5;
+}
+.jTMRvT .scroll .img {
+    width: 2.75rem;
+    height: auto;
+}
+.kaqGcp .module-name {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.kaqGcp .hover {
+    flex: 1 1 0%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    color: var(--primary-color);
+}
+.kaqGcp .module-name .icon {
+    width: 1rem;
+    height: 1rem;
+}
+.kaqGcp .module-name .icon-name {
+    margin-right: 0.625rem;
+    fill: var(--icon-color);
+}
+.gvTPwc {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+.gvTPwc .item {
+    width: 32.5%;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background: var(--nested-bg);
+    border-radius: 0.625rem;
+    min-height: 5.3125rem;
+}
+.gvTPwc .item-type {
+    font-size: 0.75rem;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.bRYT .darken {
+    color: var(--text-color);
+    background: none;
+}
+.gvTPwc .icon {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.25rem;
+}
+.gvTPwc .wins-icon {
+    fill: var(--icon-color);
+}
+.gvTPwc .item-value {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-top: 0.25rem;
+    max-width: 80%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.bRYT .module-name {
+    color: var(--text-color);
+    margin: 0.25rem 0px 0.75rem;
+}
+.cWmEHH .content-item {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    font-size: 1rem;
+    color: var(--text-color);
+    margin-bottom: 0.875rem;
+}
+.cWmEHH .cover-box {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 0.625rem;
+    background-color: var(--card-bg);
+    background-size: cover;
+    cursor: pointer;
+}
+.cWmEHH .info {
+    flex: 1 1 0%;
+    padding: 0px 1.25rem;
+}
+.cWmEHH .game-name {
+    cursor: pointer;
+}
+.cWmEHH .info .desc {
+    font-size: 0.75rem;
+    line-height: normal;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+.wihpY .joined {
+    font-size: 0.75rem;
+    text-align: center;
+    color: rgba(152, 167, 181, 0.6);
+    margin: 1.25rem;
+}
+.full {
+    min-width: 100%;
+    min-height: 100%;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+.jWpPjB .avatar-box {
+    width: 10.625rem;
+    height: 10.625rem;
+    margin: 2.5rem auto 4rem;
+    position: relative;
+    cursor: pointer;
+}
+.jWpPjB .avatar-box .avatar {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 0.25rem solid var(--input-border-color);
+}
+.jWpPjB .avatar-box button {
+    position: absolute;
+    left: 50%;
+    white-space: nowrap;
+    bottom: -0.875rem;
+    transform: translateX(-50%);
+    height: 2.25rem;
+    border-radius: 1.125rem;
+    padding: 0px 0.875rem;
+    color: var(--text-color);
+    background-color: rgba(49, 52, 60, 0.6);
+}
+.jWpPjB .dialog-box {
+    flex: 1 1 0%;
+}
+
+.jWpPjB .tip-warnning {
+    margin: 0.625rem 0.75rem;
+    font-size: 0.75rem;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.jWpPjB .button {
+    width: 18.75rem;
+    margin: 3.125rem auto;
+}
+.fftbAb .crop-area {
+    position: relative;
+    height: 320px;
+    opacity: 1 !important;
+}
+.reactEasyCrop_Container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    user-select: none;
+    touch-action: none;
+    cursor: move;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reactEasyCrop_Contain {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.fftbAb .croped-area {
+    border-radius: 50%;
+    border: none;
+    color: rgba(0, 0, 0, 0.8);
+}
+.reactEasyCrop_CropArea {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    box-shadow: 0 0 0 9999em;
+    color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+.fftbAb .upload {
+    width: 3.75rem;
+    height: 3.75rem;
+    position: absolute;
+    z-index: 11;
+    left: 50%;
+    top: 50%;
+    margin: -1.875rem 0px 0px -1.875rem;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fftbAb .upload .icon {
+    width: 2.125rem;
+    height: 2.125rem;
+    fill: rgb(255, 255, 255);
+}
+.fftbAb .upload input {
+    opacity: 0;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+.fftbAb .wrap-box {
+    margin:  6%;
+}
+.fftbAb .avatar-selecter {
+    margin: 0px 1.25rem;
+}
+.bVYRzn .buttons {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.bVYRzn button {
+    width: 3.75rem;
+    height: 3.75rem;
+    border: 0.1875rem solid transparent;
+    border-radius: 50%;
+}
+.bVYRzn img {
+    width: 3.375rem;
+    height: 3.375rem;
+    border-radius: 50%;
+}
+.fftbAb .button {
+    margin: 1.875rem auto 0px;
+    width: 18.75rem;
+}
+.dWgZek .select-wrap .select .select-trigger {
+    color: var(--text-color);
+    background: transparent;
+    border-radius: 0px;
+    padding: 0px;
+    width: 7.25rem;
+    font-weight: bold;
+}
+.eA-dYOl {
+    flex: 1 1 0%;
+    display: flex;
+    flex-direction: column;
+    background: rgb(30, 32, 36);
+}
+.fuYrTE {
+    height: 0px;
+    flex: 1 1 auto;
+}
+.kgsidd {
+    position: relative;
+}
+.VfNib {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+.VfNib .head {
+    width: 2.5rem;
+    padding-top: 0.875rem;
+    flex: 0 0 auto;
+}
+.VfNib .head .head-link {
+    position: relative;
+    display: block;
+}
+.VfNib .head .head-link .avatar {
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0px;
+    display: block;
+}
+.VfNib .head .head-link .user-level.type-1, .VfNib .head .head-link .user-level.type-0 {
+    background-color: rgb(217, 221, 236);
+}
+.VfNib .head .head-link .user-level {
+    width: 2.375rem;
+    height: 1.125rem;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    position: absolute;
+    top: 2rem;
+    left: 0.0625rem;
+}
+.jouJMO {
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: rgb(23, 24, 27);
+    width: 2.25rem;
+    height: 1rem;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background-color: rgb(177, 182, 201);
+    border-radius: 0.625rem;
+}
+.jouJMO.type-1 {
+    background-color: rgb(177, 182, 201);
+}
+.jouJMO.type-3 {
+    background-color: rgb(246, 199, 34);
+}
+.VfNib .head .head-link .user-level .level-wrap {
+    font-weight: bold;
+    height: 0.875rem;
+    width: 100%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.jouJMO span {
+    line-height: 1rem;
+}
+.VfNib .head .head-link .user-level .level-wrap span {
+    font-size: 0.75rem;
+    line-height: normal;
+}
+.VfNib .head .head-link .level {
+    width: 3.375rem;
+    margin-top: 0.625rem;
+    transform: scale(0.740741);
+    transform-origin: left center;
+}
+.VfNib .head .head-link .level .img-star {
+    width: auto;
+    height: 0.875rem;
+    margin-right: 1px;
+}
+.VfNib .content {
+    width: 1%;
+    flex: 1 1 0%;
+    padding-top: 0.875rem;
+    padding-left: 0.375rem;
+    padding-bottom: 0.3125rem;
+}
+.VfNib .content .title {
+    display: flex;
+    height: 1.125rem;
+    margin-bottom: 0.25rem;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+.VfNib .content .title .name {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 100%;
+}
+.VfNib .content .title .name > div, .VfNib .content .title .name > a {
+    height: 100%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.VfNib .content .title .name a {
+    line-height: 1.125rem;
+    color: rgba(153, 164, 176, 0.6);
+    font-weight: 600;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+}
+.VfNib .content .title .name a > span {
+    max-width: 12.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    opacity: 0.9;
+}
+.VfNib .content .title .name .time {
+    align-self: flex-end;
+    margin-left: 0.5rem;
+    color: rgba(153, 164, 176, 0.6);
+    font-size: 0.75rem;
+}
+.VfNib .content .msg-wrap {
+    display: flex;
+    position: relative;
+}
+.bkGvjR {
+    user-select: text;
+    font-size: 0.875rem;
+    vertical-align: top;
+    color: rgb(202, 209, 217);
+    line-height: 1.125rem;
+    word-break: break-word;
+    overflow: hidden;
+    border-radius: 1.25rem;
+    padding: 0.625rem;
+    background-color: rgba(49, 52, 58, 0.6);
+}

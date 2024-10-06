@@ -4,8 +4,6 @@
 
     const handleCloseModal = (()=>{
         goto($app.url)
-        $app.searchUrl = {}
-        app.set($app)
     })
 
 </script>

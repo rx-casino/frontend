@@ -1,24 +1,28 @@
 <script>
     import { goto } from "$app/navigation";
-    import { app } from "$lib/store/screen.js";
+    import Loader from "$lib/component/loader.svelte";
+    import { app, api_script } from "$lib/store/screen.js";
      let password = ""
      let email = ""
+    $: load = false
 
    const handleRoute = ((route)=>{
         goto(`${$app.url === "/" ? "" : $app.url}?modal=auth&tab=${route}`)
-        let obj = {
-            modal: "auth",
-            tab: route
+    })
+
+    const handleSubmit = (async()=>{
+        load = true
+        const { is_login, loading } = await $api_script.login(email, password )
+        if(is_login){
+            window.location.href = $app.url; 
         }
-        $app.searchUrl = obj
-        app.set($app)
+        load = loading
     })
 
 </script>
 
 
 <div id="login" class="sc-bZSZLb iyEiUf jOrhkb">
-
     <div class="box">
         <div class="sc-ezbkAF kDuLvp input ">
             <div class="input-label">Email Address</div>
@@ -44,8 +48,14 @@
     </div>
     <hr>
     <div class="buttons">
-        <button class="sc-iqseJM sc-bqiRlB cBmlor fnKcEH button button-big">
-            <div class="button-inner">Sign in</div>
+        <button on:click={()=> handleSubmit()} class="sc-iqseJM sc-bqiRlB cBmlor fnKcEH button button-big">
+            <div class="button-inner">
+                {#if load}
+                <Loader btn={true} />
+            {:else}
+                Sign in
+            {/if}
+            </div>
         </button>
         <button on:click={()=> handleRoute("sign-up")} class="sc-iqseJM sc-crHmcD cBmlor gEBngo button button-big signup oskks">
             <div class="button-inner">

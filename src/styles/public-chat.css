@@ -1,0 +1,245 @@
+.bJUiGv {
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 360px;
+    height: 100%;
+    z-index: 103;
+}
+.hHMWvP {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.bJUiGv > div {
+    position: relative;
+}
+.bJUiGv > div::before {
+    content: "";
+    position: absolute;
+    left: -0.75rem;
+    top: 0rem;
+    width: 0.75rem;
+    pointer-events: none;
+    height: 100%;
+    background-image: linear-gradient(to left, rgb(4, 4, 4), rgba(36, 38, 43, 0));
+    opacity: 0.1;
+}
+.dWgZek {
+    height: 4rem;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0px;
+    background-color: var(--background-color);
+}
+.dWgZek::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -0.75rem;
+    width: 100%;
+    height: 0.75rem;
+    background-image: linear-gradient(rgb(17, 20, 21), rgba(36, 38, 43, 0));
+    opacity: 0.25;
+}
+.dWgZek .select-wrap {
+    height: 100%;
+    position: relative;
+}
+.dWgZek .select-wrap .select {
+    height: 100%;
+}
+.dWgZek .select-wrap .select .select-trigger .select-label {
+    width: 5.75rem;
+    line-height: 3.875rem;
+    background-image: linear-gradient(to top, rgba(91, 174, 28, 0.15), rgba(91, 174, 28, 0) 50%);
+    border-bottom: 2px solid rgb(67, 179, 9);
+    text-align: center;
+}
+.dWgZek .select-wrap .select .select-trigger .select-label {
+    width: 5.75rem;
+    line-height: 3.875rem;
+    background-image: linear-gradient(to top, rgba(91, 174, 28, 0.15), rgba(91, 174, 28, 0) 50%);
+    border-bottom: 2px solid rgb(67, 179, 9);
+    text-align: center;
+}
+.dWgZek .chat-features {
+    display: flex;
+}
+.eA-dYOl {
+    flex: 1 1 0%;
+    display: flex;
+    flex-direction: column;
+    background: rgb(30, 32, 36);
+}
+.eA-dYOl .chat-infos.infos {
+    height: 3rem;
+}
+.eA-dYOl .chat-infos {
+    position: absolute;
+    left: 0px;
+    bottom: 6.625rem;
+    width: 100%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.eA-dYOl .chat-infos .unreads {
+    width: 4.125rem;
+    height: 3rem;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    font-weight: bold;
+    -webkit-box-align: center;
+    align-items: center;
+    background: url(https://static.nanogames.io/assets/bubble.9b2b2288.png) 0% 0% / 100% 100% no-repeat;
+}
+.eA-dYOl .chat-infos .unreads span {
+    margin-top: -0.5rem;
+}
+.ddROGz {
+    position: relative;
+    flex: 0 0 auto;
+    box-sizing: border-box;
+    background-color: rgba(49, 52, 58, 0.8);
+    padding: 1rem 0.625rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px 0px;
+}
+.ddROGz .send-input {
+    position: relative;
+    min-height: 2.625rem;
+    display: flex;
+}
+.ddROGz .send-input .input-area {
+    position: relative;
+    margin: 0px;
+    flex: 1 1 0%;
+    width: 100%;
+    padding-right: 0px;
+    transition: padding 0.4s;
+}
+.ddROGz .send-input .input-area .input-control {
+    height: auto;
+    padding: 0px 1.25rem;
+    background-color: rgb(30, 32, 36);
+    align-items: flex-end;
+    border: 1px solid rgba(49, 52, 58, 0.8);
+    border-radius: 1.375rem;
+}
+.ddROGz .send-input .input-area textarea {
+    display: block;
+    padding: 0.625rem 0px;
+    height: 2.75rem;
+    width: 100%;
+    line-height: 1.5rem;
+    color: rgb(202, 209, 217);
+}
+.ddROGz .send-input .input-area .emoji-r-wrap {
+    margin-right: -0.375rem;
+    margin-bottom: 0.6875rem;
+}
+.cVsgdS {
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.ddROGz .send-input .input-area .emoji-r-wrap > svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    fill: rgba(153, 164, 176, 0.6);
+}
+.ddROGz .send-controls {
+    display: flex;
+    position: relative;
+    z-index: 10;
+    margin-top: 1.25rem;
+    height: 1.125rem;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.ddROGz .send-controls .left-actions {
+    padding-left: 0.375rem;
+    margin-bottom: 0.375rem;
+    display: flex;
+    height: 100%;
+}
+.ddROGz .send-controls .left-actions .chat-icon {
+    line-height: 1;
+}
+.ddROGz .send-controls .left-actions svg {
+    width: 1.125rem;
+    height: 1.125rem;
+    margin-right: 1.5rem;
+}
+.dWgZek .chat-features .inform {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.625rem;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.dWgZek .chat-features .inform > svg {
+    fill: rgb(85, 91, 101);
+    font-size: 1rem;
+}
+.dWgZek .chat-features .rich-btn {
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.bXthlR > img {
+    width: 1.25rem;
+}
+.ddROGz .send-input .send-btn-wrap {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    transition: ease-in 1s ;
+}
+.dWgZek .chat-features .close-icon {
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.625rem;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.ddROGz .send-input .send-btn {
+    width: 3.75rem;
+    height: 2.75rem;
+    border-radius: 1.375rem;
+    margin-left: 0.25rem;
+}
+.ddROGz .send-input .send-btn svg {
+    fill: rgb(245, 246, 247);
+}
