@@ -24,6 +24,48 @@ export class Api_Script{
             }
         }
         this.user_by_id = null
+        this.req_status = ""
+    }
+
+    async changeProfileimg(img){  
+        let path = "api/profile/change-profile-img"
+        await axios.post(`${this.backend_url}/${path}`,{img},
+            {
+            headers:{
+                Authorization: `Bearer ${this.secret}`
+            }
+        })
+        .then((res)=>{
+            this.user = res.data
+            this.req_status = "success"
+        })
+        .catch((err)=>{
+            toast.error(err.response.data.error)
+            this.req_status = "failed"
+        })
+        return { status: this.req_status, user: this.user}
+    }
+
+    async changeUsername(username){
+        this.loading = true
+        let path = "api/profile/change-username"
+        await axios.post(`${this.backend_url}/${path}`,{username},
+            {
+            headers:{
+                Authorization: `Bearer ${this.secret}`
+            }
+        })
+        .then((res)=>{
+            this.user = res.data
+            this.req_status = "success"
+            this.loading = false
+        })
+        .catch((err)=>{
+            toast.error(err.response.data.error)
+            this.loading = false
+               this.req_status = "failed"
+        })
+        return { status: this.req_status, user:this.user}
     }
 
     async profile(secret){

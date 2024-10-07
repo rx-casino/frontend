@@ -16,7 +16,7 @@
 <div class="setting-wrap" style="opacity: 1; transform: none;">
     <div class="sc-cjrPHo emGYim">
         <div class="user-info">
-            <a class="left" href="{!$app.url ? "/" : $app.url === "/" ? "" : $app.url}?modal=profile&tab=main&id=${user?.user_id}">
+            <a class="left" href="{!$app.url ? "/" : $app.url === "/" ? "" : $app.url}?modal=profile&tab=main&id={user?.user_id}">
                 <img class="avatar " alt="" src="{user?.profile_image}">
                 <div class="name-level">
                     <p>{user?.username}</p>

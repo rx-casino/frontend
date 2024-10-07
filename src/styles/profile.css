@@ -388,22 +388,30 @@
     height: 100%;
 }
 .fftbAb .wrap-box {
-    margin:  6%;
+    margin:  1%;
 }
 .fftbAb .avatar-selecter {
-    margin: 0px 1.25rem;
+    margin: 0px 0.75rem;
 }
 .bVYRzn .buttons {
     display: flex;
     -webkit-box-pack: justify;
     justify-content: space-between;
     margin-top: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-y: auto;
+    touch-action: pan-x;
+    overscroll-behavior: contain;
 }
 .bVYRzn button {
     width: 3.75rem;
     height: 3.75rem;
     border: 0.1875rem solid transparent;
     border-radius: 50%;
+}
+.bVYRzn button.active {
+    border-color: var(--primary-color);
 }
 .bVYRzn img {
     width: 3.375rem;
