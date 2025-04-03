@@ -13,10 +13,13 @@ export class Api_Script{
         }
         this.is_login = false
         this.loading = false
-        this.default_wallet = {
-            name: "SOL",
-            icon: "https://cryptologos.cc/logos/thumbs/solana.png?v=034",
-            amount: "18.12339"
+        this.wallet = {
+            user_id: 123456,
+            is_active: true,
+            balance: 12,
+            icon: "https://cryptologos.cc/logos/thumbs/solana.png?v=034", 
+            symbol: "SOL",
+            name: "SOLANA"
         }
         this.authentication = {
             headers:{
@@ -26,6 +29,7 @@ export class Api_Script{
         this.user_by_id = null
         this.req_status = ""
     }
+    
 
     async changeProfileimg(img){  
         let path = "api/profile/change-profile-img"
@@ -78,6 +82,7 @@ export class Api_Script{
         })
         .then((res)=>{
             this.user = res.data.user
+            this.wallet = res.data.default_wallet
             this.is_login = true
             this.loading = false
         })
@@ -123,13 +128,15 @@ export class Api_Script{
                 this.is_login = true
                 toast.success("Account created successfully")
                 this.loading = false
+                this.req_status = "success"
             })
             .catch((err)=>{
                 toast.error(err.response.data.error)
                 this.loading = false
+                this.req_status = "failed"
             })
         }
-        return {loading: this.loading, user: this.user}
+        return {loading: this.loading, user: this.user, status: this.req_status}
     }
     async login(email, password){
         if(!email){
@@ -152,12 +159,32 @@ export class Api_Script{
                 this.is_login = true
                 toast.success("Logged In Successfully")
                 this.loading = false
+                this.req_status = "success"
             })
             .catch((err)=>{
+                this.req_status = "failed"
                 toast.error(err.response.data.error)
                 this.loading = false
             })
         }
-        return {loading: this.loading, is_login: this.is_login}  
+        return {loading: this.loading, status: this.req_status}  
     }
+
+    async UseFetchData(endpoint, data = {}, method = "GET"){
+          const url = `${this.backend_url}/api${endpoint}`;
+          const headers = {
+            "Content-type": "application/json",
+            Authorization: `Bearer ${this.secret}`,
+          }
+          try {
+            const response = await (method === "POST" ? axios.post(url, data, {
+              headers
+            }) : axios.get(url, { headers }));
+            return { data: response.data };
+          } catch (error) {
+            console.log(error)
+            return { error }
+          }
+    };
 }
+

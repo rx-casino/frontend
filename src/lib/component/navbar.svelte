@@ -4,6 +4,7 @@
     import MobileMenu from "./mobileMenu.svelte";
     import { goto } from "$app/navigation";
     import UserSettingWrap from "./navbar-components/user-setting-wrap.svelte";
+    import { balanceFormat } from "$lib/utils/balanceFormat.js";
     $: _userSettingWrap = false
     $: user = $api_script.user
     const handleChatScren = (()=>{
@@ -17,7 +18,7 @@
     })
 
     const handleMenuRoutes = ((event)=>{
-        window.open(event.detail, '_self', 'noopener noreferrer');
+        goto(event.detail)
         handleCloseMenu()
     })
 
@@ -29,6 +30,8 @@
     const handleRoute = ((modal, route)=>{
         goto(`${!$app.url ? "/" : $app.url === "/" ? "" : $app.url}?modal=${modal}&tab=${route}`)
     })
+
+
 
 </script>
 
@@ -63,15 +66,15 @@
                     <div class="sc-fmciRz LQlWw">
                         <div class="sc-iFMAIt icGouR">
                             <div class="sc-eXlEPa boxpOO">
-                                <img class="coin-icon" alt="" src="{$api_script.default_wallet?.icon}">
-                                <span class="currency">{$api_script.default_wallet?.name}</span>
+                                <img class="coin-icon" alt="" src="{$api_script.wallet?.icon}">
+                                <span class="currency">{$api_script.wallet?.symbol}</span>
                                 <!-- <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="sc-gsDKAQ hxODWG icon">
                                     <use xlink:href="#icon_Arrow"></use>
                                 </svg> -->
                             </div>
                             <div class="sc-Galmp erPQzq coin notranslate balance">
                                 <div class="amount">
-                                    <span class="amount-str">{$api_script.default_wallet?.amount}</span>
+                                    <span class="amount-str">{balanceFormat($api_script.wallet?.balance)}</span>
                                 </div>
                             </div>
                         </div>

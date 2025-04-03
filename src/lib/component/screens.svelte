@@ -12,11 +12,6 @@ browser && window.addEventListener("resize", () => {
    app.set($app)
 })
 
-onMount(() => {
-   resizeScreen = browser && window.innerWidth
-   $app?.sizeConfiq(resizeScreen)
-   app.set($app)
-})
 
 $: $app.newScreen = $app.screen - $app.sideHasExpand - $app.chatBoxExpand
 
@@ -29,8 +24,8 @@ const setSettle = (()=>{
 
 </script>
 
-<Sidebar {resizeScreen} />
-<button on:click={setSettle} class="sc-FNXRL eFYxRV pc-sidebar-fold-change-btn {$app.sideHasExpand === $app.sideFold  && $app.sideBar}" style="display:{resizeScreen > 621 ? "block" : "none"};">
+<Sidebar resizeScreen={$app.screen} />
+<button on:click={setSettle} class="sc-FNXRL eFYxRV pc-sidebar-fold-change-btn {$app.sideHasExpand === $app.sideFold  && $app.sideBar}" style="display:{$app.screen > 621 ? "block" : "none"};">
    <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="sc-gsDKAQ hxODWG icon">
       <use xlink:href="#icon_Tighten"></use>
    </svg>

@@ -1,5 +1,6 @@
 <script>
-       import { api_script } from "$lib/store/screen.js";
+    import { api_script } from "$lib/store/screen.js";
+    import { balanceFormat } from "$lib/utils/balanceFormat.js";
 </script>
 
 <div class="sc-dkPtRN jScFby scroll-view sc-lnDqNf jVlMUR" id="deposit">
@@ -12,17 +13,17 @@
             <div class="sc-ePIFMk ieqRur input-control">
                 <div class="sc-iNpzLj dbclKc">
                     <div class="wrap">
-                        <img class="coin-icon" alt="" src="{$api_script.default_wallet?.icon}">
-                        <span class="currency">{$api_script.default_wallet?.name}</span>
-                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="sc-gsDKAQ hxODWG icon">
+                        <img class="coin-icon" alt="" src="{$api_script.wallet?.icon}">
+                        <span class="currency">{$api_script.wallet?.symbol}</span>
+                        <!-- <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="sc-gsDKAQ hxODWG icon">
                             <use xlink:href="#icon_Arrow"></use>
-                        </svg>
+                        </svg> -->
                     </div>
                 </div>
                 <div class="sc-iyyVIK fKpjfd">
                     <div class="wrap">
                         <div class="tit">Balance : </div>
-                        <div class="amount">{$api_script.default_wallet?.amount}</div>
+                        <div class="amount">{balanceFormat($api_script.wallet?.balance)}</div>
                     </div>
                 </div>
             </div>

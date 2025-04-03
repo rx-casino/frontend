@@ -71,7 +71,6 @@
                 {:else}
                     <Empty content="Oops!!! No data"/>
                 {/if}
-                
             </div>
         </div> 
     </div> 

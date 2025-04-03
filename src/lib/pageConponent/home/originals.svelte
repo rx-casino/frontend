@@ -1,18 +1,12 @@
 <script>
-let Games = [
-    {name: "Crash Trenball", image: "https://img2.nanogames.io/game/image/4398e0b7-7da4-4d42-b67d-33d5f2785fc6.png", view: 0},
-    {name: "Classic Dice", image: "https://img2.nanogames.io/game/image/455dda9f-80eb-438c-958c-45c355c3c659.png", view: 0},
-    {name: "Crash", image: "https://img2.nanogames.io/game/image/c405f953-f7ca-4da5-8309-dcba4fc44e7d.png", view: 1},
-    {name: "Plinko", image: "https://img2.nanogames.io/game/image/ae817f12-fa67-49b8-b33e-6cafda497488.png", view: 0},
-    {name: "Mines", image: "https://img2.nanogames.io/game/image/0aa3d807-0380-4f8e-b65e-3179d4af2234.png", view: 0},
-    {name: "Video Poker", image: "https://img2.nanogames.io/game/image/42026a73-a033-4a57-bb1c-7e09fd2ea30f.png", view: 0},
-]
+ import { originals } from "$lib/component/games.js";
+
 </script>
 
 <div class="sc-bjeSbO krOlmx grid-list">
-    {#each Games as game}
+    {#each originals as game}
     <div class="sc-gfqkcP epfPPG bot-view {game.view ? "super-block" : ""}  game-RouletteSingle">
-        <a class="sc-hKTqa dbJiKC game-item-wrap " href="/roulette">
+        <a class="sc-hKTqa dbJiKC game-item-wrap " href="/{game.route}">
             <div class="lazy-img img">
                 <img src="{game.image}" alt="">
             </div>
@@ -29,7 +23,7 @@ let Games = [
         </a>
         <div class="sc-fivaXQ gVplre bot-view">
             <div class="wrap">
-                <a class="item" href="/roulette">{game.name}</a>
+                <a class="item" href="/{game.route}">{game.name}</a>
                 <div class="help-btn-wrap">
                     <button>
                         <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="sc-gsDKAQ hxODWG icon">

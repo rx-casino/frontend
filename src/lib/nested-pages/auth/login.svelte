@@ -12,8 +12,8 @@
 
     const handleSubmit = (async()=>{
         load = true
-        const { is_login, loading } = await $api_script.login(email, password )
-        if(is_login){
+        const { status, loading } = await $api_script.login(email, password )
+        if(status === "success"){
             window.location.href = $app.url; 
         }
         load = loading

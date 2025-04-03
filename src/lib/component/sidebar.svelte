@@ -5,7 +5,9 @@
     import MobileMenu from "./mobileMenu.svelte";
     import { goto } from "$app/navigation";
     import { browser } from "$app/environment";
+    import { originals } from "./games.js";
     export let resizeScreen;
+    
 
     $: route = $page?.url.pathname
     $: is_originals = false
@@ -13,9 +15,9 @@
     $: is_light_mode = $app.theme === "darken"
 
     function goToExternalSite(route) {
-        window.open(route, '_self', 'noopener noreferrer');
+        // window.open(route, '_self', 'noopener noreferrer');
         // console.log($app)
-        // goto(route)
+        goto(route)
     }
 
     const handleThemeSwitch = ((mode)=>{
@@ -61,166 +63,18 @@
             {#if is_originals}
             <div class="game-list"> 
                 <div class="list-shadow hidden-scroll-y">
-                    <div class="sc-jeraig jtlPkX game-item ">
-                        <div class="game-icon">
-                            <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="sc-gsDKAQ hxODWG icon">
-                                <use xlink:href="#icon_RouletteSingle"></use>
-                            </svg>
+                    {#each originals as ori}
+                        <!-- svelte-ignore a11y-click-events-have-key-events -->
+                        <!-- svelte-ignore a11y-no-static-element-interactions -->
+                        <div on:click={()=> goto(`/${ori.route}`)} class="sc-jeraig jtlPkX game-item ">
+                            <div class="game-icon">
+                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="sc-gsDKAQ hxODWG icon">
+                                    <use xlink:href="#{ori.icon}"></use>
+                                </svg>
+                            </div>
+                            <span class="game-name">{ori.name}</span>
                         </div>
-                        <span class="game-name">RouletteSingle</span>
-                    </div>
-                    <div class="sc-jeraig jtlPkX game-item ">
-                        <div class="game-icon">
-                            <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="sc-gsDKAQ hxODWG icon">
-                                <use xlink:href="#icon_Crash"></use>
-                            </svg>
-                        </div>
-                        <span class="game-name">Crash</span>
-                    </div>
-                    <div class="sc-jeraig jtlPkX game-item ">
-                        <div class="game-icon">
-                            <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="sc-gsDKAQ hxODWG icon">
-                                <use xlink:href="#icon_ClassicDice"></use>
-                            </svg>
-                        </div>
-                        <span class="game-name">Classic Dice</span>
-                    </div>
-                    <div class="sc-jeraig jtlPkX game-item ">
-                        <div class="game-icon">
-                            <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="sc-gsDKAQ hxODWG icon">
-                                <use xlink:href="#icon_Mines"></use>
-                            </svg>
-                        </div>
-                        <span class="game-name">Mines</span>
-                    </div>
-                    <div class="sc-jeraig jtlPkX game-item ">
-                        <div class="game-icon">
-                            <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="sc-gsDKAQ hxODWG icon">
-                                <use xlink:href="#icon_UltimateDice"></use>
-                            </svg>
-                        </div>
-                        <span class="game-name">Ultimate Dice</span>
-                    </div>
-                    <div class="sc-jeraig jtlPkX game-item ">
-                        <div class="game-icon">
-                            <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="sc-gsDKAQ hxODWG icon">
-                                <use xlink:href="#icon_SlotsOrientalBeauties"></use>
-                            </svg>
-                        </div>
-                        <span class="game-name">Beauties</span>
-                    </div>
-                    <div class="sc-jeraig jtlPkX game-item ">
-                        <div class="game-icon">
-                            <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="sc-gsDKAQ hxODWG icon">
-                                <use xlink:href="#icon_Plinko"></use>
-                            </svg>
-                        </div>
-                        <span class="game-name">Plinko</span>
-                    </div>
-                    <div class="sc-jeraig jtlPkX game-item ">
-                        <div class="game-icon">
-                            <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="sc-gsDKAQ hxODWG icon">
-                                <use xlink:href="#icon_SlotsCave"></use>
-                            </svg>
-                        </div>
-                        <span class="game-name">Cave</span>
-                    </div>
-                    <div class="sc-jeraig jtlPkX game-item ">
-                        <div class="game-icon">
-                            <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="sc-gsDKAQ hxODWG icon">
-                                <use xlink:href="#icon_Wheel"></use>
-                            </svg>
-                        </div>
-                        <span class="game-name">Wheel</span>
-                    </div>
-                    <div class="sc-jeraig jtlPkX game-item ">
-                        <div class="game-icon">
-                            <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="sc-gsDKAQ hxODWG icon">
-                                <use xlink:href="#icon_SlotsSword"></use>
-                            </svg>
-                        </div>
-                        <span class="game-name">Sword</span>
-                    </div>
-                    <div class="sc-jeraig jtlPkX game-item ">
-                        <div class="game-icon">
-                            <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="sc-gsDKAQ hxODWG icon">
-                                <use xlink:href="#icon_Roulette"></use>
-                            </svg>
-                        </div>
-                        <span class="game-name">Roulette</span>
-                    </div>
-                    <div class="sc-jeraig jtlPkX game-item ">
-                        <div class="game-icon">
-                            <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="sc-gsDKAQ hxODWG icon">
-                                <use xlink:href="#icon_VideoPoker"></use>
-                            </svg>
-                        </div>
-                        <span class="game-name">Video Poker</span>
-                    </div>
-                    <div class="sc-jeraig jtlPkX game-item ">
-                        <div class="game-icon">
-                            <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="sc-gsDKAQ hxODWG icon">
-                                <use xlink:href="#icon_Limbo"></use>
-                            </svg>
-                        </div>
-                        <span class="game-name">Limbo</span>
-                    </div>
-                    <div class="sc-jeraig jtlPkX game-item ">
-                        <div class="game-icon">
-                            <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="sc-gsDKAQ hxODWG icon">
-                                <use xlink:href="#icon_Baccarat"></use>
-                            </svg>
-                        </div>
-                        <span class="game-name">Baccarat</span>
-                    </div>
-                    <div class="sc-jeraig jtlPkX game-item ">
-                        <div class="game-icon">
-                            <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="sc-gsDKAQ hxODWG icon">
-                                <use xlink:href="#icon_Blackjack"></use>
-                            </svg>
-                        </div>
-                        <span class="game-name">Blackjack</span>
-                    </div>
-                    <div class="sc-jeraig jtlPkX game-item ">
-                        <div class="game-icon">
-                            <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="sc-gsDKAQ hxODWG icon">
-                                <use xlink:href="#icon_Hilo"></use>
-                            </svg>
-                        </div>
-                        <span class="game-name">Hilo</span>
-                    </div>
-                    <div class="sc-jeraig jtlPkX game-item ">
-                        <div class="game-icon">
-                            <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="sc-gsDKAQ hxODWG icon">
-                                <use xlink:href="#icon_HashDice"></use>
-                            </svg>
-                        </div>
-                        <span class="game-name">Hash Dice</span>
-                    </div>
-                    <div class="sc-jeraig jtlPkX game-item ">
-                        <div class="game-icon">
-                            <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="sc-gsDKAQ hxODWG icon">
-                                <use xlink:href="#icon_KenoSingle"></use>
-                            </svg>
-                        </div>
-                        <span class="game-name">Keno Single</span>
-                    </div>
-                    <div class="sc-jeraig jtlPkX game-item ">
-                        <div class="game-icon">
-                            <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="sc-gsDKAQ hxODWG icon">
-                                <use xlink:href="#icon_SlotsEgyptianAdventure"></use>
-                            </svg>
-                        </div>
-                        <span class="game-name">Egyptian</span>
-                    </div>
-                    <div class="sc-jeraig jtlPkX game-item ">
-                        <div class="game-icon">
-                            <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="sc-gsDKAQ hxODWG icon">
-                                <use xlink:href="#icon_Keno"></use>
-                            </svg>
-                        </div>
-                        <span class="game-name">Keno</span>
-                    </div>
+                    {/each}
                 </div>
             </div>
             {/if}

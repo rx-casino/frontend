@@ -20,8 +20,8 @@
 
     const handleSubmit = (async()=>{
         load = true
-        const { user, loading } = await $api_script.signup(email, password,ref )
-        if(user){
+        const { loading, status } = await $api_script.signup(email, password,ref )
+        if(status === "success"){
             window.location.href = $app.url; 
         }
         load = loading

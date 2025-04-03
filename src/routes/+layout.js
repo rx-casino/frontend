@@ -1,15 +1,13 @@
 import { browser } from '$app/environment';
 import { socket } from "$lib/store/socket.js"
 import { Api_Script } from '$lib/index.js';
-import { app, api_script } from '$lib/store/screen';
-import { ScreenScript } from '$lib/component/screenConfig.js';
+import { api_script } from '$lib/store/screen';
 import { getCookie } from "$lib/store/cookies";
 import { SocketScript } from '$lib/socket/socket.io.js';
 
 /** @type {import('./$types').PageLoad} */
 export async function load({ route }) {
     const _apiScript = new Api_Script()
-    const _app = new ScreenScript()
     const _socket = new SocketScript()
     if(browser){
         setAPI_url(_apiScript, _socket )
@@ -17,25 +15,10 @@ export async function load({ route }) {
         if(_secret){
           await  _apiScript.profile(_secret)
         }
-        _app.url = route.id
-        // const _searchUrl = setUrlObject()
-        // _app.searchUrl = _searchUrl
-        const theme = localStorage.getItem("theme") || ""
-        _app.themeConfig(theme)
     }
-    app.set(_app)
     return 
 }
 
-const setUrlObject = (()=>{
-    // const queryString = window.location.search;
-    // const params = new URLSearchParams(queryString);
-    // const paramsObj = {};
-    // params.forEach((value, key) => {
-    //     paramsObj[key] = value;
-    // });
-    // return paramsObj 
-})
 
 const setAPI_url = ((_apiScript, _socket)=>{
     let localhostUrl = "http://localhost:8000"
